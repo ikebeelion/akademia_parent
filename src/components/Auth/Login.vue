@@ -71,11 +71,11 @@ export default {
 			User.login(this.logindata).then((result) =>{
 				// getUser
 				localStorage.setItem("token", result.data['access_token'])					
+				window.location.href = 'dashboard'
 				User.auth().then((result)=>{
 					console.log(result)
 					if(result.data.roleid == 5){
 						localStorage.setItem("auth", "true")						
-						window.location.href = 'dashboard'
 					}else{
 						this.errors = "Login as Parent"
 					}
