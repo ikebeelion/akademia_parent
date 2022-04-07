@@ -73,7 +73,7 @@ export default {
 			User.login(this.logindata).then((result) =>{
 				// getUser
 				localStorage.setItem("token", result.data['access_token'])					
-				window.location.href = 'dashboard'
+				window.location.href = 'viewtable'
 				User.auth().then((result)=>{
 					console.log(result)
 					if(result.data.roleid == 5){
