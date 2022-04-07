@@ -6,8 +6,8 @@
                 <div class="form-group">
                     <label for="">Ward</label>
                     <select class="form-control" v-model="getResult.ward">
-                        <option value="">--</option>
-                        <option v-for="ward in wards" :value="ward[0].studentuseraccountid" :key="ward[0].studentuseraccountid">
+                        <option value="null">--</option>
+                        <option selected v-for="ward in wards" :value="ward[0].studentuseraccountid" :key="ward[0].studentuseraccountid">
                             {{ ward[0].firstname }} {{ ward[0].lastname }}
                         </option>
                     </select>
