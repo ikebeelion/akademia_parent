@@ -20,7 +20,7 @@
           </router-link>
          </li>
           <li>		
-          <router-link @click="closeToggle"  to="/myresult" active-class="activeLink">
+          <router-link @click="closeToggle"  to="/wardresult" active-class="activeLink">
             <span class="icon"> 
                       <i class="fas fa-list-alt"></i>
                   </span>
