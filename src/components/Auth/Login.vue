@@ -72,7 +72,7 @@ export default {
 							
 			User.login(this.logindata).then((result) =>{
 				// getUser
-				localStorage.setItem("token", result.data['access_token'])					
+				localStorage.setItem("parenttoken", result.data['access_token'])					
 				window.location.href = 'viewtable'
 				User.auth().then((result)=>{
 					console.log(result)
