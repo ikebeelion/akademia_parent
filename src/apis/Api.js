@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 let Api = axios.create({
-    baseURL: "https://akademiapowerfield.ng/api",
+    baseURL: "http://akademia.powerfields.ng/api",
     headers: {
         Authorization: 'Bearer ' + localStorage.getItem('parenttoken') 
     },
