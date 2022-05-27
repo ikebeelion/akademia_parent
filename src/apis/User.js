@@ -1,5 +1,4 @@
 import Api from './Api'
-import Csrf from './Csrf'
 export default{
     async login(form){
         await Csrf.getCookie()
@@ -12,5 +11,9 @@ export default{
 
     auth(){
         return Api.get("/user")
+    },
+    
+    resetpassword(email){
+        return Api.post('/reset-password', email)
     }
 }
